@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A13C0288196866EA0074DCED /* Hello.playground in Resources */ = {isa = PBXBuildFile; fileRef = A13C0287196865F10074DCED /* Hello.playground */; };
+		A18E225D19686EF500399A80 /* DVTPlugInManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A18E225C19686EF500399A80 /* DVTPlugInManager.h */; };
+		A1D4C3C6196878FC0069FA06 /* DVTDeveloperPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D4C3C5196878FC0069FA06 /* DVTDeveloperPaths.h */; };
+		A1D4C3C8196879B80069FA06 /* DVTFilePath.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D4C3C7196879B80069FA06 /* DVTFilePath.h */; };
+		A1D4C3CA19687FEE0069FA06 /* BBUHack.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4C3C919687FEE0069FA06 /* BBUHack.m */; };
+		A1D4C3D01968824F0069FA06 /* DVTSourceSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D4C3CF1968824F0069FA06 /* DVTSourceSpecification.h */; };
 		A1F059781968261200196715 /* BorisTheBlade.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F059771968261200196715 /* BorisTheBlade.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1F0597E1968261300196715 /* BorisTheBlade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F059721968261200196715 /* BorisTheBlade.framework */; };
-		A1F059851968261300196715 /* BorisTheBladeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F059841968261300196715 /* BorisTheBladeTests.swift */; };
+		A1F0599C1968374200196715 /* BBUPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0599B1968374100196715 /* BBUPlayground.swift */; };
+		A1F059EC19684D6700196715 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F059EB19684D6700196715 /* main.swift */; };
+		A1F059F019684D6700196715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F059EF19684D6700196715 /* AppDelegate.swift */; };
+		A1F059F219684D6700196715 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F059F119684D6700196715 /* Images.xcassets */; };
+		A1F059F519684D6700196715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F059F319684D6700196715 /* Main.storyboard */; };
+		A1F05A0819684D7B00196715 /* BorisTheBlade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F059721968261200196715 /* BorisTheBlade.framework */; };
+		A1F05A0919684D7B00196715 /* BorisTheBlade.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F059721968261200196715 /* BorisTheBlade.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A1F05A0E196861EC00196715 /* IDEPlaygroundDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A0D196861EC00196715 /* IDEPlaygroundDocument.h */; };
+		A1F05A101968623F00196715 /* IDESourceCodeDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A0F1968623F00196715 /* IDESourceCodeDocument.h */; };
+		A1F05A121968626500196715 /* IDEEditorDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A111968626500196715 /* IDEEditorDocument.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A1F0597F1968261300196715 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F059691968261200196715 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1F059711968261200196715;
-			remoteInfo = BorisTheBlade;
-		};
-		A1F0598E1968261600196715 /* PBXContainerItemProxy */ = {
+		A1F05A0A19684D7B00196715 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1F059691968261200196715 /* Project object */;
 			proxyType = 1;
@@ -29,13 +36,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A1F05A0C19684D7C00196715 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1F05A0919684D7B00196715 /* BorisTheBlade.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A13C0287196865F10074DCED /* Hello.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Hello.playground; sourceTree = "<group>"; };
+		A13C0289196867E00074DCED /* IDEToyboxDomainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEToyboxDomainItem.h; sourceTree = "<group>"; };
+		A18E225C19686EF500399A80 /* DVTPlugInManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTPlugInManager.h; sourceTree = "<group>"; };
+		A1D4C3C5196878FC0069FA06 /* DVTDeveloperPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDeveloperPaths.h; sourceTree = "<group>"; };
+		A1D4C3C7196879B80069FA06 /* DVTFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFilePath.h; sourceTree = "<group>"; };
+		A1D4C3C919687FEE0069FA06 /* BBUHack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUHack.m; sourceTree = "<group>"; };
+		A1D4C3CF1968824F0069FA06 /* DVTSourceSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceSpecification.h; sourceTree = "<group>"; };
 		A1F059721968261200196715 /* BorisTheBlade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BorisTheBlade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F059761968261200196715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1F059771968261200196715 /* BorisTheBlade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorisTheBlade.h; sourceTree = "<group>"; };
-		A1F0597D1968261300196715 /* BorisTheBladeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BorisTheBladeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1F059831968261300196715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1F059841968261300196715 /* BorisTheBladeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorisTheBladeTests.swift; sourceTree = "<group>"; };
+		A1F0599B1968374100196715 /* BBUPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBUPlayground.swift; sourceTree = "<group>"; };
+		A1F059C819683C0100196715 /* IDEPlaygroundEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEPlaygroundEditor.h; sourceTree = "<group>"; };
+		A1F059CD19683C3A00196715 /* IDEEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditor.h; sourceTree = "<group>"; };
+		A1F059CE19683C3A00196715 /* IDESourceCodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeEditor.h; sourceTree = "<group>"; };
+		A1F059D119683C5100196715 /* DVTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTViewController.h; sourceTree = "<group>"; };
+		A1F059D219683C5100196715 /* IDEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEViewController.h; sourceTree = "<group>"; };
+		A1F059D519683CD600196715 /* XcodeBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeBridgingHeader.h; sourceTree = "<group>"; };
+		A1F059E719684D6700196715 /* Playground Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playground Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F059EA19684D6700196715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1F059EB19684D6700196715 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A1F059EF19684D6700196715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1F059F119684D6700196715 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1F059F419684D6700196715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1F05A0D196861EC00196715 /* IDEPlaygroundDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEPlaygroundDocument.h; sourceTree = "<group>"; };
+		A1F05A0F1968623F00196715 /* IDESourceCodeDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeDocument.h; sourceTree = "<group>"; };
+		A1F05A111968626500196715 /* IDEEditorDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditorDocument.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,11 +87,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1F0597A1968261300196715 /* Frameworks */ = {
+		A1F059E419684D6700196715 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F0597E1968261300196715 /* BorisTheBlade.framework in Frameworks */,
+				A1F05A0819684D7B00196715 /* BorisTheBlade.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +101,12 @@
 		A1F059681968261200196715 = {
 			isa = PBXGroup;
 			children = (
-				A1F059741968261200196715 /* BorisTheBlade */,
-				A1F059811968261300196715 /* BorisTheBladeTests */,
+				A1F059741968261200196715 /* Code */,
+				A1F059E819684D6700196715 /* Playground Sample */,
 				A1F059731968261200196715 /* Products */,
+				A1F05A131968655800196715 /* Resources */,
+				A1F059751968261200196715 /* Supporting Files */,
+				A1F059961968310600196715 /* Xcode Headers */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,17 +114,20 @@
 			isa = PBXGroup;
 			children = (
 				A1F059721968261200196715 /* BorisTheBlade.framework */,
-				A1F0597D1968261300196715 /* BorisTheBladeTests.xctest */,
+				A1F059E719684D6700196715 /* Playground Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1F059741968261200196715 /* BorisTheBlade */ = {
+		A1F059741968261200196715 /* Code */ = {
 			isa = PBXGroup;
 			children = (
 				A1F059771968261200196715 /* BorisTheBlade.h */,
-				A1F059751968261200196715 /* Supporting Files */,
+				A1D4C3C919687FEE0069FA06 /* BBUHack.m */,
+				A1F0599B1968374100196715 /* BBUPlayground.swift */,
+				A1F059D519683CD600196715 /* XcodeBridgingHeader.h */,
 			);
+			name = Code;
 			path = BorisTheBlade;
 			sourceTree = "<group>";
 		};
@@ -90,23 +137,48 @@
 				A1F059761968261200196715 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = BorisTheBlade;
 			sourceTree = "<group>";
 		};
-		A1F059811968261300196715 /* BorisTheBladeTests */ = {
+		A1F059961968310600196715 /* Xcode Headers */ = {
 			isa = PBXGroup;
 			children = (
-				A1F059841968261300196715 /* BorisTheBladeTests.swift */,
-				A1F059821968261300196715 /* Supporting Files */,
+				A1D4C3C5196878FC0069FA06 /* DVTDeveloperPaths.h */,
+				A1D4C3C7196879B80069FA06 /* DVTFilePath.h */,
+				A18E225C19686EF500399A80 /* DVTPlugInManager.h */,
+				A1D4C3CF1968824F0069FA06 /* DVTSourceSpecification.h */,
+				A1F059D119683C5100196715 /* DVTViewController.h */,
+				A1F059CD19683C3A00196715 /* IDEEditor.h */,
+				A1F05A111968626500196715 /* IDEEditorDocument.h */,
+				A1F05A0D196861EC00196715 /* IDEPlaygroundDocument.h */,
+				A1F059C819683C0100196715 /* IDEPlaygroundEditor.h */,
+				A1F05A0F1968623F00196715 /* IDESourceCodeDocument.h */,
+				A1F059CE19683C3A00196715 /* IDESourceCodeEditor.h */,
+				A13C0289196867E00074DCED /* IDEToyboxDomainItem.h */,
+				A1F059D219683C5100196715 /* IDEViewController.h */,
 			);
-			path = BorisTheBladeTests;
+			name = "Xcode Headers";
+			path = XcodeHeaders;
 			sourceTree = "<group>";
 		};
-		A1F059821968261300196715 /* Supporting Files */ = {
+		A1F059E819684D6700196715 /* Playground Sample */ = {
 			isa = PBXGroup;
 			children = (
-				A1F059831968261300196715 /* Info.plist */,
+				A1F059EF19684D6700196715 /* AppDelegate.swift */,
+				A1F059F119684D6700196715 /* Images.xcassets */,
+				A1F059EA19684D6700196715 /* Info.plist */,
+				A1F059F319684D6700196715 /* Main.storyboard */,
+				A1F059EB19684D6700196715 /* main.swift */,
 			);
-			name = "Supporting Files";
+			path = "Playground Sample";
+			sourceTree = "<group>";
+		};
+		A1F05A131968655800196715 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A13C0287196865F10074DCED /* Hello.playground */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,7 +188,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F05A101968623F00196715 /* IDESourceCodeDocument.h in Headers */,
+				A1F05A121968626500196715 /* IDEEditorDocument.h in Headers */,
+				A18E225D19686EF500399A80 /* DVTPlugInManager.h in Headers */,
+				A1D4C3C8196879B80069FA06 /* DVTFilePath.h in Headers */,
 				A1F059781968261200196715 /* BorisTheBlade.h in Headers */,
+				A1F05A0E196861EC00196715 /* IDEPlaygroundDocument.h in Headers */,
+				A1D4C3D01968824F0069FA06 /* DVTSourceSpecification.h in Headers */,
+				A1D4C3C6196878FC0069FA06 /* DVTDeveloperPaths.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +220,24 @@
 			productReference = A1F059721968261200196715 /* BorisTheBlade.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A1F0597C1968261300196715 /* BorisTheBladeTests */ = {
+		A1F059E619684D6700196715 /* Playground Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1F0598B1968261300196715 /* Build configuration list for PBXNativeTarget "BorisTheBladeTests" */;
+			buildConfigurationList = A1F05A0219684D6700196715 /* Build configuration list for PBXNativeTarget "Playground Sample" */;
 			buildPhases = (
-				A1F059791968261300196715 /* Sources */,
-				A1F0597A1968261300196715 /* Frameworks */,
-				A1F0597B1968261300196715 /* Resources */,
+				A1F059E319684D6700196715 /* Sources */,
+				A1F059E419684D6700196715 /* Frameworks */,
+				A1F059E519684D6700196715 /* Resources */,
+				A1F05A0C19684D7C00196715 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A1F059801968261300196715 /* PBXTargetDependency */,
-				A1F0598F1968261600196715 /* PBXTargetDependency */,
+				A1F05A0B19684D7B00196715 /* PBXTargetDependency */,
 			);
-			name = BorisTheBladeTests;
-			productName = BorisTheBladeTests;
-			productReference = A1F0597D1968261300196715 /* BorisTheBladeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "Playground Sample";
+			productName = "Playground Sample";
+			productReference = A1F059E719684D6700196715 /* Playground Sample.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -172,9 +251,8 @@
 					A1F059711968261200196715 = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					A1F0597C1968261300196715 = {
+					A1F059E619684D6700196715 = {
 						CreatedOnToolsVersion = 6.0;
-						TestTargetID = A1F059711968261200196715;
 					};
 				};
 			};
@@ -184,6 +262,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A1F059681968261200196715;
 			productRefGroup = A1F059731968261200196715 /* Products */;
@@ -191,7 +270,7 @@
 			projectRoot = "";
 			targets = (
 				A1F059711968261200196715 /* BorisTheBlade */,
-				A1F0597C1968261300196715 /* BorisTheBladeTests */,
+				A1F059E619684D6700196715 /* Playground Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -204,10 +283,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1F0597B1968261300196715 /* Resources */ = {
+		A1F059E519684D6700196715 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13C0288196866EA0074DCED /* Hello.playground in Resources */,
+				A1F059F219684D6700196715 /* Images.xcassets in Resources */,
+				A1F059F519684D6700196715 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,31 +300,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D4C3CA19687FEE0069FA06 /* BBUHack.m in Sources */,
+				A1F0599C1968374200196715 /* BBUPlayground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1F059791968261300196715 /* Sources */ = {
+		A1F059E319684D6700196715 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F059851968261300196715 /* BorisTheBladeTests.swift in Sources */,
+				A1F059F019684D6700196715 /* AppDelegate.swift in Sources */,
+				A1F059EC19684D6700196715 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A1F059801968261300196715 /* PBXTargetDependency */ = {
+		A1F05A0B19684D7B00196715 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1F059711968261200196715 /* BorisTheBlade */;
-			targetProxy = A1F0597F1968261300196715 /* PBXContainerItemProxy */;
-		};
-		A1F0598F1968261600196715 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1F059711968261200196715 /* BorisTheBlade */;
-			targetProxy = A1F0598E1968261600196715 /* PBXContainerItemProxy */;
+			targetProxy = A1F05A0A19684D7B00196715 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1F059F319684D6700196715 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1F059F419684D6700196715 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A1F059861968261300196715 /* Debug */ = {
@@ -329,6 +420,8 @@
 		A1F059891968261300196715 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -338,14 +431,26 @@
 				INFOPLIST_FILE = BorisTheBlade/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode6-Beta2.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
+				);
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = BorisTheBlade/XcodeBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A1F0598A1968261300196715 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,40 +460,45 @@
 				INFOPLIST_FILE = BorisTheBlade/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode6-Beta2.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
+				);
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = BorisTheBlade/XcodeBridgingHeader.h;
 			};
 			name = Release;
 		};
-		A1F0598C1968261300196715 /* Debug */ = {
+		A1F05A0319684D6700196715 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BorisTheBladeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				INFOPLIST_FILE = "Playground Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode6-Beta2.app/Contents/SharedFrameworks /Applications/Xcode6-Beta2.app/Contents/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A1F0598D1968261300196715 /* Release */ = {
+		A1F05A0419684D6700196715 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BorisTheBladeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				INFOPLIST_FILE = "Playground Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode6-Beta2.app/Contents/SharedFrameworks /Applications/Xcode6-Beta2.app/Contents/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,14 +523,16 @@
 				A1F0598A1968261300196715 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		A1F0598B1968261300196715 /* Build configuration list for PBXNativeTarget "BorisTheBladeTests" */ = {
+		A1F05A0219684D6700196715 /* Build configuration list for PBXNativeTarget "Playground Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1F0598C1968261300196715 /* Debug */,
-				A1F0598D1968261300196715 /* Release */,
+				A1F05A0319684D6700196715 /* Debug */,
+				A1F05A0419684D6700196715 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
