@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A13C0288196866EA0074DCED /* Hello.playground in Resources */ = {isa = PBXBuildFile; fileRef = A13C0287196865F10074DCED /* Hello.playground */; };
-		A18E225D19686EF500399A80 /* DVTPlugInManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A18E225C19686EF500399A80 /* DVTPlugInManager.h */; };
+		A18E225D19686EF500399A80 /* DVTPlugInManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A18E225C19686EF500399A80 /* DVTPlugInManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1D4C3C6196878FC0069FA06 /* DVTDeveloperPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D4C3C5196878FC0069FA06 /* DVTDeveloperPaths.h */; };
 		A1D4C3C8196879B80069FA06 /* DVTFilePath.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D4C3C7196879B80069FA06 /* DVTFilePath.h */; };
 		A1D4C3CA19687FEE0069FA06 /* BBUHack.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4C3C919687FEE0069FA06 /* BBUHack.m */; };
 		A1D4C3D01968824F0069FA06 /* DVTSourceSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D4C3CF1968824F0069FA06 /* DVTSourceSpecification.h */; };
+		A1E81CFF19917C400084C0BF /* XcodeBridgingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F059D519683CD600196715 /* XcodeBridgingHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E81D0019917C790084C0BF /* IDEPlaygroundEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F059C819683C0100196715 /* IDEPlaygroundEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E81D0119917CA00084C0BF /* IDESourceCodeEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F059CE19683C3A00196715 /* IDESourceCodeEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E81D0219917CCE0084C0BF /* IDEEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F059CD19683C3A00196715 /* IDEEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E81D0319917CDC0084C0BF /* IDEViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F059D219683C5100196715 /* IDEViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E81D0419917CED0084C0BF /* DVTViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F059D119683C5100196715 /* DVTViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1F059781968261200196715 /* BorisTheBlade.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F059771968261200196715 /* BorisTheBlade.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1F0599C1968374200196715 /* BBUPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0599B1968374100196715 /* BBUPlayground.swift */; };
 		A1F059EC19684D6700196715 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F059EB19684D6700196715 /* main.swift */; };
@@ -21,9 +27,9 @@
 		A1F059F519684D6700196715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F059F319684D6700196715 /* Main.storyboard */; };
 		A1F05A0819684D7B00196715 /* BorisTheBlade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F059721968261200196715 /* BorisTheBlade.framework */; };
 		A1F05A0919684D7B00196715 /* BorisTheBlade.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F059721968261200196715 /* BorisTheBlade.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A1F05A0E196861EC00196715 /* IDEPlaygroundDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A0D196861EC00196715 /* IDEPlaygroundDocument.h */; };
-		A1F05A101968623F00196715 /* IDESourceCodeDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A0F1968623F00196715 /* IDESourceCodeDocument.h */; };
-		A1F05A121968626500196715 /* IDEEditorDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A111968626500196715 /* IDEEditorDocument.h */; };
+		A1F05A0E196861EC00196715 /* IDEPlaygroundDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A0D196861EC00196715 /* IDEPlaygroundDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1F05A101968623F00196715 /* IDESourceCodeDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A0F1968623F00196715 /* IDESourceCodeDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1F05A121968626500196715 /* IDEEditorDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F05A111968626500196715 /* IDEEditorDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,13 +194,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E81D0419917CED0084C0BF /* DVTViewController.h in Headers */,
 				A1F05A101968623F00196715 /* IDESourceCodeDocument.h in Headers */,
 				A1F05A121968626500196715 /* IDEEditorDocument.h in Headers */,
+				A1E81D0119917CA00084C0BF /* IDESourceCodeEditor.h in Headers */,
 				A18E225D19686EF500399A80 /* DVTPlugInManager.h in Headers */,
+				A1E81D0319917CDC0084C0BF /* IDEViewController.h in Headers */,
+				A1E81D0019917C790084C0BF /* IDEPlaygroundEditor.h in Headers */,
 				A1D4C3C8196879B80069FA06 /* DVTFilePath.h in Headers */,
+				A1E81D0219917CCE0084C0BF /* IDEEditor.h in Headers */,
 				A1F059781968261200196715 /* BorisTheBlade.h in Headers */,
 				A1F05A0E196861EC00196715 /* IDEPlaygroundDocument.h in Headers */,
 				A1D4C3D01968824F0069FA06 /* DVTSourceSpecification.h in Headers */,
+				A1E81CFF19917C400084C0BF /* XcodeBridgingHeader.h in Headers */,
 				A1D4C3C6196878FC0069FA06 /* DVTDeveloperPaths.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode6-Beta2.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
+					"$(SYSTEM_APPS_DIR)/Xcode6-Beta5.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
 				);
 				OTHER_LDFLAGS = (
 					"-undefined",
@@ -441,7 +453,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = BorisTheBlade/XcodeBridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -462,7 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode6-Beta2.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
+					"$(SYSTEM_APPS_DIR)/Xcode6-Beta5.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
 				);
 				OTHER_LDFLAGS = (
 					"-undefined",
@@ -470,7 +482,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = BorisTheBlade/XcodeBridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -485,7 +497,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Playground Sample/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode6-Beta2.app/Contents/SharedFrameworks /Applications/Xcode6-Beta2.app/Contents/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode6-Beta5.app/Contents/SharedFrameworks /Applications/Xcode6-Beta5.app/Contents/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -498,7 +510,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Playground Sample/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode6-Beta2.app/Contents/SharedFrameworks /Applications/Xcode6-Beta2.app/Contents/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode6-Beta5.app/Contents/SharedFrameworks /Applications/Xcode6-Beta5.app/Contents/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

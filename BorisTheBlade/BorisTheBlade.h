@@ -8,12 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-//! Project version number for BorisTheBlade.
 FOUNDATION_EXPORT double BorisTheBladeVersionNumber;
-
-//! Project version string for BorisTheBlade.
 FOUNDATION_EXPORT const unsigned char BorisTheBladeVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <BorisTheBlade/PublicHeader.h>
-
-
+#import "XcodeBridgingHeader.h"
