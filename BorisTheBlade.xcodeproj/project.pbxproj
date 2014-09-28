@@ -445,7 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode6-Beta5.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
 				);
 				OTHER_LDFLAGS = (
 					"-undefined",
@@ -474,7 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode6-Beta5.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS",
 				);
 				OTHER_LDFLAGS = (
 					"-undefined",
@@ -497,7 +497,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Playground Sample/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode6-Beta5.app/Contents/SharedFrameworks /Applications/Xcode6-Beta5.app/Contents/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode.app/Contents/SharedFrameworks /Applications/Xcode.app/Contents/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -510,7 +510,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Playground Sample/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode6-Beta5.app/Contents/SharedFrameworks /Applications/Xcode6-Beta5.app/Contents/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Applications/Xcode.app/Contents/SharedFrameworks /Applications/Xcode.app/Contents/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         let playgroundUrl = NSBundle.mainBundle().URLForResource("Hello", withExtension:"playground")
         
-        self.playgroundController = BBUPlayground.playgroundEditorForDocumentAtURL(playgroundUrl)
+        self.playgroundController = BBUPlayground.playgroundEditorForDocumentAtURL(playgroundUrl!)
         println(self.playgroundController)
 
         var window = NSApplication.sharedApplication().windows[0] as NSWindow

@@ -8,32 +8,33 @@
 
 import Cocoa
 
-public class BBUPlayground {
+let xcodePath = "/Applications/Xcode.app/"
 
+public class BBUPlayground {
     public class func playgroundEditorForDocumentAtURL(url : NSURL) -> NSViewController {
-        dlopen("/Applications/Xcode6-Beta5.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/DVTFoundation", RTLD_NOW)
-        dlopen("/Applications/Xcode6-Beta5.app/Contents/Frameworks/IDEKit.framework/Versions/A/IDEKit", RTLD_NOW)
+        dlopen(xcodePath + "Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/DVTFoundation", RTLD_NOW)
+        dlopen(xcodePath + "Contents/Frameworks/IDEKit.framework/Versions/A/IDEKit", RTLD_NOW)
 
         var errorPtr : NSErrorPointer = nil
 
-        var languageSupportUIPlugin = NSBundle(path:"/Applications/Xcode6-Beta5.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin")
-        var result = languageSupportUIPlugin.loadAndReturnError(errorPtr)
+        var languageSupportUIPlugin = NSBundle(path:xcodePath + "Contents/PlugIns/IDELanguageSupportUI.ideplugin")
+        var result = languageSupportUIPlugin!.loadAndReturnError(errorPtr)
 
         if !result {
             println(errorPtr.memory)
         }
 
-        var languageSupportPlugin = NSBundle(path:"/Applications/Xcode6-Beta5.app/Contents/PlugIns/IDELanguageSupport.ideplugin")
-        result = languageSupportPlugin.loadAndReturnError(errorPtr)
+        var languageSupportPlugin = NSBundle(path:xcodePath + "Contents/PlugIns/IDELanguageSupportCore.ideplugin")
+        result = languageSupportPlugin!.loadAndReturnError(errorPtr)
 
-        if !result && errorPtr {
+        if !result && errorPtr != nil {
             println(errorPtr.memory)
         }
 
-        var sourceEditorPlugin = NSBundle(path:"/Applications/Xcode6-Beta5.app/Contents/PlugIns/IDESourceEditor.ideplugin")
-        result = sourceEditorPlugin.loadAndReturnError(errorPtr)
+        var sourceEditorPlugin = NSBundle(path:xcodePath + "Contents/PlugIns/IDESourceEditor.ideplugin")
+        result = sourceEditorPlugin!.loadAndReturnError(errorPtr)
 
-        if !result && errorPtr {
+        if !result && errorPtr != nil {
             println(errorPtr.memory)
         }
 
@@ -41,12 +42,12 @@ public class BBUPlayground {
 
         /*let className6 = "DVTFilePath" as CString
         let classObject6 = objc_lookUpClass(className6)! as NSObject.Type
-        var filePath : AnyObject = classObject6.filePathForPathString("/Applications/Xcode6-Beta5.app")*/
+        var filePath : AnyObject = classObject6.filePathForPathString(xcodePath)*/
 
         // /var/folders/by/znchwbl51gdfht48wv0m4t6r0000gn/C/com.apple.DeveloperTools/6.0-6A216f
         let className5 = "DVTDeveloperPaths".cStringUsingEncoding(NSUTF8StringEncoding)
         let classObject5 = objc_lookUpClass(className5!)! as NSObject.Type
-        classObject5.initializeApplicationDirectoryName("../../../../../../../../Applications/Xcode6-Beta5.app") // yes, really.
+        classObject5.initializeApplicationDirectoryName("../../../../../../../.." + xcodePath) // yes, really.
 
         let className7 = "DVTSourceSpecification".cStringUsingEncoding(NSUTF8StringEncoding)
         let classObject7 = objc_lookUpClass(className7!)! as NSObject.Type
@@ -56,7 +57,7 @@ public class BBUPlayground {
         let classObject4 = objc_lookUpClass(className4!)! as NSObject.Type
 
         let manager = classObject4.defaultPlugInManager()
-        /*let directories = [ "/Applications/Xcode6-Beta5.app/Contents/PlugIns" ]
+        /*let directories = [ xcodePath + "Contents/PlugIns" ]
         var scanResults : AnyObject = manager._scanForPlugInsInDirectories(directories, skippingDuplicatesOfPlugIns:[] as NSArray)
         println(scanResults)
         manager._registerPlugInsFromScanRecords(scanResults)*/
@@ -75,12 +76,12 @@ public class BBUPlayground {
 
         var document = classObject(contentsOfURL:url, ofType:"com.apple.dt.playground", error:errorPtr) as NSDocument!
 
-        if !document {
+        if document == nil {
             println(url)
             println(errorPtr.memory)
         }
 
-        var handle = dlopen("/Applications/Xcode6-Beta5.app/Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS/IDELanguageSupportUI", RTLD_NOW)
+        var handle = dlopen(xcodePath + "Contents/PlugIns/IDELanguageSupportUI.ideplugin/Contents/MacOS/IDELanguageSupportUI", RTLD_NOW)
 
         let className2 = "IDEPlaygroundEditor".cStringUsingEncoding(NSUTF8StringEncoding)
         println(objc_lookUpClass(className2!))
